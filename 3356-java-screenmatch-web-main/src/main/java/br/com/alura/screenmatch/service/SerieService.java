@@ -18,6 +18,8 @@ public class SerieService {
         return converteDados(repositorio.findAll());
     }
 
+    public List<SerieDTO> obterLancamentos(){return converteDados(repositorio.lancamentosMaisRecentes());}
+
     public List<SerieDTO> obterTop5Series() {
         return converteDados(repositorio.findTop5ByOrderByAvaliacaoDesc());
     }
