@@ -1,12 +1,5 @@
 body {
-    background: linear-gradient(180.61deg,
-            #000000 25.16%,
-            #04254f 80%,
-            #409ecd 100%);
-    background-repeat: no-repeat;
-    background-size: cover;
-
-
+    background: black;
 }
 
 h1 {
