@@ -8,8 +8,6 @@ const elementos = {
 };
 
 // Função para criar a lista de filmes
-
-// Função para criar a lista de filmes
 function criarListaFilmes(elemento, dados) {
     // Verifique se há um elemento <ul> dentro da seção
     const ulExistente = elemento.querySelector('ul');
@@ -23,12 +21,13 @@ function criarListaFilmes(elemento, dados) {
     ul.className = 'lista';
     const listaHTML = dados.map((filme) => `
         <li>
-            <a href="/detalhes.html?id=${filme.id}">
+            <a href="/detalhes.html?id=${filme.Id}">
                 <img src="${filme.poster}" alt="${filme.titulo}">
             </a>
         </li>
     `).join('');
 
+    dados.map((filme) => console.log(filme))
     ul.innerHTML = listaHTML;
     elemento.appendChild(ul);
 }

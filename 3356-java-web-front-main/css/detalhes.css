@@ -1,9 +1,5 @@
 body {
-    background-size: cover;
-    background-image: linear-gradient(180.61deg,
-            #000000e3 25.16%,
-            #04254fc4 80%,
-            #409ecdcb 100%);
+    background-color: gray;
     padding: 5em;
     height: 100%;
     min-height: 100vh;

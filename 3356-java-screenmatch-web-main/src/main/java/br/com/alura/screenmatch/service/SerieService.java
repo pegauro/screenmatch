@@ -25,10 +25,6 @@ public class SerieService {
         return converteDados(repositorio.findTop5ByOrderByAvaliacaoDesc());
     }
 
-    public List<SerieDTO> obterLancamentos() {
-        return converteDados(repositorio.lancamentosMaisRecentes());
-    }
-
     public SerieDTO obterPorId(Long id) {
         Optional<Serie> serie = repositorio.findById(id);
 
